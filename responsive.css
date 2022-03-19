@@ -1,0 +1,76 @@
+
+.cont-responsive {
+	display: none;
+}
+
+@media screen and (max-width: 850px ){
+	.grid-cont {
+		display: none;
+	}
+	.cont-responsive {
+		display: flex;
+	}
+}
+
+.cont-responsive {
+	flex-direction: column;
+}
+.cont-nav {
+	background: #aaa;
+}
+.container-main{
+	background: #888;
+	padding: 30px;
+}
+.cont-about{
+	background: #777;
+	padding: 30px;	
+	font-size: 15px;
+}
+.cont-skills{
+	background: #666;
+	padding: 30px;	
+	font-size: 15px;
+}
+.txt {
+	border-right: 6px double #000;
+	border-left: 6px double #000;
+	padding: 8px;
+	margin-top: 4px;
+}
+.icons-p {
+	max-width: 45px;
+	max-height: 45px;
+	margin: 5px;
+	margin-bottom: 10px;
+	animation: turn 2s;
+	animation-fill-mode: forwards;
+}
+.cont-projects{
+	background: #555;
+	padding: 30px;	
+}
+.image-p {
+	max-width: 200px;
+	max-height: 200px;
+	position: relative;
+	margin: 15px auto;
+	padding: 20px 20px;
+	animation: intro-p 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes intro-p {
+	from {
+		max-height: 100px;
+		max-width: 100px;
+	}
+	to {
+		max-height: 200px;
+		max-width: 200px;
+	}
+}
+.cont-contact{
+	background: #444;	
+	padding: 30px;
+	color: #fff;
+}

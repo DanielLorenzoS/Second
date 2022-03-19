@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cafetería</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<script src="https://kit.fontawesome.com/0db0d871d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="grid-cont">
+		<div class="grid-side grid-I">
+			<nav>
+				<ul class="nav__ul">
+					<li class="nav__li"><i class="fas fa-home"></i><a onclick="menu()">Inicio</a></li>
+					<li class="nav__li"><i class="fas fa-info"></i><a onclick="inicio()">Sobre
+							Nosotros</a></li>
+					<li class="nav__li"><i class="fas fa-chalkboard-teacher"></i></i><a onclick="projects()">Menú</a></li>
+					<li class="nav__li me"><i class="fas fa-phone"></i><a onclick="info()">Contáctanos</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="grid-main grid-I">
+			<div class="cont-main" id="divMain">
+				<div class="cont_portafolio">
+					<h2>Cafetería ...
+						<span>&#160;</span>
+					</h2>
+					<h3>Estado de México - Satélite
+						<span>&#160;</span>
+					</h3>
+				</div>
+				<div class="cont-img">
+					<img src="imagenes/coffeIntro.png">
+				</div>
+
+			</div>
+			<div class="cont" id="divCont">
+				<div class="cont-info">
+					<a name="direccion"></a>
+					<h2>Nuestra historia: </h2>
+					<h3>
+						Our coffe... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste amet
+						ipsam vel sequi quo laborum repudiandae eius ab. Inventore quia sequi maxime natus, itaque
+						labore nostrum ratione quaerat fuga.
+				</div>
+				<div class="img-text">
+					<img src="imagenes/coffeInfo.png">
+				</div>
+
+			</div>
+
+			<div class="cont-con" id="divCon"></div>
+			<div class="cont-menu" id="divHab">
+				<div class="package">
+					<h1>Coffes</h1>
+					<h2 id="titleCoffe">Frapé</h2>
+					<div class="galery">
+						<img class="left" src="imagenes/left.png" alt="left">
+						<img class="product" id="coff" src="imagenes/frape.png" alt="Frapé">
+						<img class="right" src="imagenes/right.png" alt="right">
+					</div>
+				</div>
+		
+				<div class="package">
+					<h1>Cakes</h1>
+					<h2 id="titleCake">Cake</h2>
+					<div class="galery">
+						<img class="left2" src="imagenes/left.png" alt="left">
+						<img class="product" id="pancake" src="imagenes/cake.jpg" alt="Cake">
+						<img class="right2" src="imagenes/right.png" alt="right">
+					</div>
+				</div>
+			</div>
+			<div class="contenedor_contacto" id="divForm">
+				<div class="dataF">
+					<div class="form_section">
+						<output class="form_section numeros"><i>Contacto:</i></output>
+					</div>
+					<div class="form_section">
+						<output class="form_section numeros">Correo: cafeteria@cafeteria.com</output>
+					</div>
+					<div class="form_section">
+						<output class="form_section numeros">Teléfono: 5511223344</output>
+					</div>
+					<div class="form_section">
+						<output class="form_section numeros">Celular: 5588442266</output>
+					</div>
+				</div>
+				<div class="dataF maps">
+					Maps API - Ubicación
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cont-responsive">
+		<h1>Adaptación a celular en proceso</h1>
+		<!--
+		<div class="cont-nav">
+			<nav>
+			    <ul class="nav">
+						<label for="btn-menu" class="fas fa-bars"></label>
+							<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="a">Inicio</a></li>
+							<li class="nav__responsive-li"><i class="fas fa-info"></i><a href="a">Acerca de mí</a></li>
+							<li class="nav__responsive-li"><i class="fas fa-phone"></i><a href="a">Comunícate</a></li>	
+						<label for="" <i class="fa-solid fa-left"></i>></label>
+					</div>
+				</ul>
+			</nav>	
+		</div> -->
+		<!-- <input type="checkbox" id="btn-menu"> -->
+	</div>
+
+	<script src="codex.js"></script>
+</body>
+
+</html>
