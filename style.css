@@ -38,30 +38,27 @@ body {
 }
 
 .nav__li {
-	position: static;
 	padding-top: 30%;
 	margin-top: 20%;
 	display: flex;
-	overflow: hidden;
 }
 
 .nav__li a {
 	color: #fff;
-	padding-left: 6px;
 	font-size: 22px;
 	text-decoration-line: none;
 	letter-spacing: 4px;
 	opacity: 90%;
-	padding: 10px;
-	margin-left: 40px;
-	position: absolute;
-	border-radius: 10%;
-	transition: .8s;
+	margin: 100px 10px 0px 10px;
 	cursor: pointer;
+	padding: 5px;
+	position: absolute;
 }
-
+/*#ini {
+	border-bottom: 3px solid rgb(177, 111, 37);
+}*/
 .nav__li a:hover {
-	color: rgb(82, 41, 0);
+	border-bottom: 3px solid rgb(177, 111, 37);
 }
 .fas {
 	font-size: 40px;
@@ -72,13 +69,6 @@ body {
 }
 .fa-info {
 	margin-left: 17px;
-}
-
-.nav__li-img {
-	max-width: 80px;
-	max-height: 60px;
-	display: inline-block;
-	padding-top: 3px;
 }
 
 h2 span {
@@ -177,7 +167,7 @@ h3 span {
 }
 .package {
     border-bottom: 7px double rgb(82, 41, 0);
-    margin: 0 150px 15px 150px;
+    margin-bottom: 15px;
     color: #4b1d01;
 }
 .package h2 {
@@ -327,4 +317,11 @@ h2 {
 		max-width: 300px;
 		max-height: 300px;
 	}
+}
+
+.btnMenu {
+	display: none;
+}
+.floatMenu {
+	display: none;
 }
