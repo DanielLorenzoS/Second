@@ -1,5 +1,3 @@
-
-let main = document.querySelector('.grid-main');
 var x = document.getElementById("divCont");
 var y = document.getElementById("divForm");
 var z = document.getElementById("divHab");
@@ -7,7 +5,22 @@ var a = document.getElementById("divCon");
 var b = document.getElementById("divMain");
 var i = document.getElementById("image");
 
-function inicio() {    
+function inicio() {
+    if (b.style.display === "none") {
+        z.style.display = "none";
+        x.style.display = "none";
+        y.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "inline-block";
+    } else {
+        z.style.display = "none";
+        x.style.display = "none";
+        y.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "inline-block";
+    }
+}
+function nosotros() {    
     if (x.style.display === "none") {
         x.style.display = "inline-block";
         y.style.display = "none";
@@ -18,6 +31,21 @@ function inicio() {
         x.style.display = "inline-block";
         y.style.display = "none";
         z.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "none";
+	}
+}
+function menu() {
+    if (z.style.display === "none") {
+        z.style.display = "inline-block";
+        x.style.display = "none";
+        y.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "none";
+    } else {
+        z.style.display = "inline-block";
+        x.style.display = "none";
+        y.style.display = "none";
         a.style.display = "none";
         b.style.display = "none";
 	}
@@ -38,64 +66,8 @@ function info() {
         b.style.display = "none";
 	}
 }
-function projects() {
-    if (z.style.display === "none") {
-        z.style.display = "inline-block";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "none";
-        b.style.display = "none";
-    } else {
-        z.style.display = "inline-block";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "none";
-        b.style.display = "none";
-	}
-}
-function conocimiento() {
-    if (a.style.display === "none") {
-        z.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "inline-block";
-        b.style.display = "none";
-    } else {
-        z.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "inline-block";
-        b.style.display = "none";
-    }
-}
-function menu() {
-    if (b.style.display === "none") {
-        z.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "none";
-        b.style.display = "inline-block";
-    } else {
-        z.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "none";
-        a.style.display = "none";
-        b.style.display = "inline-block";
-    }
-}
 
-function projectError() {
-    win = window.open('proyectos/error404/index.html')
-}
-function projectForm() {
-    win = window.open('proyectos/Formulario/index.html')
-}
-function projectJSON() {
-    win = window.open('proyectos/Project-JSON/index.html')
-}
-function projectAPI() {
-    win = window.open('proyectos/API Rest/index.html')
-}
+
 
 let titleCoffe = document.getElementById('titleCoffe')
 let titleCake = document.getElementById('titleCake')
@@ -144,3 +116,18 @@ function changeImage(a, imgid) {
 
 coffeArray()
 cakeArray()
+
+let btnMenu = document.getElementById('btn');
+let float = document.getElementById('move');
+let pivote = false;
+
+btnMenu.addEventListener('click', () => {
+    if (pivote == false){
+        float.style.display = 'block';  
+        float.setAttribute('class','show');
+        pivote = true;
+    }else{
+        float.style.display = 'none';
+        pivote = false;
+    }    
+});
