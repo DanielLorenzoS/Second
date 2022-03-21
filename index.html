@@ -15,11 +15,10 @@
 		<div class="grid-side grid-I">
 			<nav>
 				<ul class="nav__ul">
-					<li class="nav__li"><i class="fas fa-home"></i><a onclick="menu()">Inicio</a></li>
-					<li class="nav__li"><i class="fas fa-info"></i><a onclick="inicio()">Sobre
-							Nosotros</a></li>
-					<li class="nav__li"><i class="fas fa-chalkboard-teacher"></i></i><a onclick="projects()">Menú</a></li>
-					<li class="nav__li me"><i class="fas fa-phone"></i><a onclick="info()">Contáctanos</a>
+					<li class="nav__li"><a  id="ini" onclick="inicio()">Inicio</a></li>
+					<li class="nav__li"><a id="sn" onclick="nosotros()">Sobre Nosotros</a></li>
+					<li class="nav__li"><a id="mn" onclick="menu()">Menú</a></li>
+					<li class="nav__li me"><a id="ct" onclick="info()">Contáctanos</a>
 					</li>
 				</ul>
 			</nav>
@@ -98,23 +97,32 @@
 			</div>
 		</div>
 	</div>
-	<div class="cont-responsive">
-		<h1>Adaptación a celular en proceso</h1>
-		<!--
-		<div class="cont-nav">
-			<nav>
-			    <ul class="nav">
-						<label for="btn-menu" class="fas fa-bars"></label>
-							<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="a">Inicio</a></li>
-							<li class="nav__responsive-li"><i class="fas fa-info"></i><a href="a">Acerca de mí</a></li>
-							<li class="nav__responsive-li"><i class="fas fa-phone"></i><a href="a">Comunícate</a></li>	
-						<label for="" <i class="fa-solid fa-left"></i>></label>
-					</div>
-				</ul>
-			</nav>	
-		</div> -->
-		<!-- <input type="checkbox" id="btn-menu"> -->
-	</div>
+	
+		<div class="btnMenu">
+			<img id="btn" src="imagenes/btnMenu.png" alt="menu">
+		</div>
+		<div class="floatMenu" id="move">
+			<a href="#1"><h3>Inicio</h3></a>
+			<a href="#2"><h3>Sobre nosotros</h3></a>
+			<a href="#3"><h3>Menú</h3></a>
+			<a href="#4"><h3>Contacto</h3></a>
+		</div>
+
+		<div class="cont-main-r" id="divMain">
+			<div class="cont_portafolio_r">
+				<h2>Cafetería ...
+					<span>&#160;</span>
+				</h2>
+				<h3>Estado de México - Satélite
+					<span>&#160;</span>
+				</h3>
+			</div>
+			<div class="cont-img-r">
+				<img src="imagenes/coffeIntro.png">
+			</div>
+
+		</div>
+	
 
 	<script src="codex.js"></script>
 </body>
