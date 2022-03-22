@@ -125,9 +125,54 @@ btnMenu.addEventListener('click', () => {
     if (pivote == false){
         float.style.display = 'block';  
         float.setAttribute('class','show');
+        btnMenu.setAttribute('class','turn');
         pivote = true;
     }else{
-        float.style.display = 'none';
+        float.setAttribute('class', 'notShow');
+        btnMenu.setAttribute('class','turnAgain');
         pivote = false;
     }    
+});
+
+let first = document.getElementById('iniRes');
+let init = document.querySelector('.inRes');
+let second = document.getElementById('hiRes');
+let history = document.querySelector('.hisRes');
+let third = document.getElementById('mainRes');
+let main = document.querySelector('.menuRes');
+let four = document.getElementById('contRes');
+let contact = document.querySelector('.contactRes');
+
+first.addEventListener('click', () => {
+    init.style.display = 'block';
+    history.style.display = 'none';
+    main.style.display = 'none';
+    contact.style.display = 'none';
+    float.setAttribute('class', 'notShow');
+    btnMenu.setAttribute('class','turnAgain');
+});
+
+second.addEventListener('click', () => {
+    init.style.display = 'none';
+    history.style.display = 'block';
+    main.style.display = 'none';
+    contact.style.display = 'none';
+    float.setAttribute('class', 'notShow');
+    btnMenu.setAttribute('class','turnAgain');
+});
+third.addEventListener('click', () => {
+    init.style.display = 'none';
+    history.style.display = 'none';
+    main.style.display = 'block';
+    contact.style.display = 'none';
+    float.setAttribute('class', 'notShow');
+    btnMenu.setAttribute('class','turnAgain');
+});
+four.addEventListener('click', () => {
+    init.style.display = 'none';
+    history.style.display = 'none';
+    main.style.display = 'none';
+    contact.style.display = 'block';
+    float.setAttribute('class', 'notShow');
+    btnMenu.setAttribute('class','turnAgain');
 });
