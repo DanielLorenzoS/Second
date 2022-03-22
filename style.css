@@ -160,7 +160,7 @@ h3 span {
 }
 .cont-menu {
 	display: none;
-	margin: 15px 80px;
+	margin: 10px 80px;
 	padding:10px;
 	opacity: 90%;
 	text-align: center;
@@ -319,9 +319,6 @@ h2 {
 	}
 }
 
-.btnMenu {
-	display: none;
-}
-.floatMenu {
+.initRes {
 	display: none;
 }
