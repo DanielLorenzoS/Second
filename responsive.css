@@ -56,6 +56,7 @@
 		color: #4b1d01;
 		text-decoration-style: double;
 		font-size: 20px;
+		overflow: hidden;
 	}
 	.cont_portafolio_r h2, h3 {
 		text-decoration: underline;
