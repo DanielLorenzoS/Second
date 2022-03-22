@@ -15,7 +15,7 @@
 		<div class="grid-side grid-I">
 			<nav>
 				<ul class="nav__ul">
-					<li class="nav__li"><a  id="ini" onclick="inicio()">Inicio</a></li>
+					<li class="nav__li"><a id="ini" onclick="inicio()">Inicio</a></li>
 					<li class="nav__li"><a id="sn" onclick="nosotros()">Sobre Nosotros</a></li>
 					<li class="nav__li"><a id="mn" onclick="menu()">Menú</a></li>
 					<li class="nav__li me"><a id="ct" onclick="info()">Contáctanos</a>
@@ -65,7 +65,7 @@
 						<img class="right" src="imagenes/right.png" alt="right">
 					</div>
 				</div>
-		
+
 				<div class="package">
 					<h1>Cakes</h1>
 					<h2 id="titleCake">Cake</h2>
@@ -79,16 +79,16 @@
 			<div class="contenedor_contacto" id="divForm">
 				<div class="dataF">
 					<div class="form_section">
-						<output class="form_section numeros"><i>Contacto:</i></output>
+						<output class="form_section"><i>Contacto:</i></output>
 					</div>
 					<div class="form_section">
-						<output class="form_section numeros">Correo: cafeteria@cafeteria.com</output>
+						<output class="form_section">Correo: cafeteria@cafeteria.com</output>
 					</div>
 					<div class="form_section">
-						<output class="form_section numeros">Teléfono: 5511223344</output>
+						<output class="form_section">Teléfono: 5511223344</output>
 					</div>
 					<div class="form_section">
-						<output class="form_section numeros">Celular: 5588442266</output>
+						<output class="form_section">Celular: 5588442266</output>
 					</div>
 				</div>
 				<div class="dataF maps">
@@ -103,13 +103,21 @@
 			<img id="btn" src="imagenes/btnMenu.png" alt="menu">
 		</div>
 		<div class="floatMenu" id="move">
-			<a href="#inRes"><h3>Inicio</h3></a>
-			<a href="#hisRes"><h3>Sobre nosotros</h3></a>
-			<a href="#3"><h3>Menú</h3></a>
-			<a href="#4"><h3>Contacto</h3></a>
+			<a href="#inRes" id="iniRes">
+				<h3>Inicio</h3>
+			</a>
+			<a href="#hisRes" id="hiRes">
+				<h3>Sobre nosotros</h3>
+			</a>
+			<a href="#menuRes" id="mainRes">
+				<h3>Menú</h3>
+			</a>
+			<a href="#contactRes" id="contRes">
+				<h3>Contacto</h3>
+			</a>
 		</div>
 
-		<div class="cont-main-r" id="divMain">
+		<div class="inRes">
 			<div class="cont_portafolio_r">
 				<h2>Cafetería ...
 					<span>&#160;</span>
@@ -121,17 +129,46 @@
 			<div class="cont-img-r">
 				<img src="imagenes/coffeIntro.png">
 			</div>
-
-	
 		</div>
+
+		<div class="hisRes">
+			<h2>Nuestra historia</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio debitis iure harum
+				necessitatibus omnis voluptatibus, dolore illum temporibus eius aliquam odio modi. Harum id natus vitae,
+				quaerat iusto nulla.</p>
+			<div class="imgRes">
+				<img src="imagenes/coffeInfo.png">
+			</div>
+		</div>
+
+		<div class="menuRes">
+			<h1>Menú</h1>
+			<div class="package">
+				<h2>Coffes</h2>
+				<h3 id="titleCoffe">Frapé</h3>
+				<div class="galery">
+					<!-- <img class="left" src="imagenes/left.png" alt="left"> -->
+					<img class="product" id="coff" src="imagenes/frape.png" alt="Frapé">
+					<!-- <img class="right" src="imagenes/right.png" alt="right"> -->
+				</div>
+			</div>
+
+			<div class="package">
+				<h2>Cakes</h2>
+				<h3 id="titleCake">Cake</h3>
+				<div class="galery">
+					<!-- <img class="left2" src="imagenes/left.png" alt="left"> -->
+					<img class="product" id="pancake" src="imagenes/cake.jpg" alt="Cake">
+					<!-- <img class="right2" src="imagenes/right.png" alt="right"> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="contactRes">
+			<h2>Contacto</h2>
+		</div>
+
 	</div>
-	<!-- <div id="hisRes"></div>
-	<div class="historyRes">
-
-	</div> -->
-
-	
-
 	<script src="codex.js"></script>
 </body>
 
