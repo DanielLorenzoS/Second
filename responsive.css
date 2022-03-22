@@ -17,7 +17,7 @@
 		grid-template-columns: 50px 1fr;
 	}
 	.btnMenu {
-		opacity: .5;
+		opacity: .7;
 		display: block;
 		background: #4b1d01;
 	}
@@ -27,10 +27,28 @@
 		max-width: 45px;
 		max-height: 45px;
 	}
-	
+	.turn {
+		animation: turn 1.2s forwards;
+	}
+	.turnAgain {
+		animation: turnAgain 1.2s forwards;
+	}
+	@keyframes turn {
+		from {
+			transform: rotate(0);
+		}to {
+			transform: rotate(180deg);
+		}
+	}
+	@keyframes turnAgain {
+		from {
+			transform: rotate(180deg);
+		}to {
+			transform: rotate(360deg);
+		}
+	}
 	.floatMenu {
 		display: none;
-		margin-left: -150px;
 	}
 	.show {
 		position: absolute;
@@ -41,6 +59,15 @@
 		animation: right 1s forwards;
 		z-index: 10;
 	}
+	.notShow {
+		position: absolute;
+		margin-top: 150px;
+		padding: 10px;
+		background: #4b1d01;
+		border-radius: 10px;
+		animation: left 1s forwards;
+		z-index: 10;
+	}
 	@keyframes right {
 		from {
 			margin-left: -200px;
@@ -48,15 +75,22 @@
 			margin-left: 150px;
 		}
 	}
+	@keyframes left {
+		from {
+			margin-left: 150px;
+		}to {
+			margin-left: -200px;
+		}
+	}
 	#move a {
 		color: rgb(177, 111, 37);
+		margin-bottom: 20px;
 		text-decoration: none;
 	}
-	.cont-main-r {
+	.inRes {
 		margin-top: -260px;
 		text-align: center;
-		color: #4b1d01;
-		text-decoration-style: double;
+		color: #381601;
 		font-size: 20px;
 		overflow: hidden;
 	}
@@ -64,15 +98,15 @@
 		margin-top: 300px;
 	}
 	.cont_portafolio_r h2, h3 {
-		text-decoration: underline;
-		margin: 20px 15px;
+		margin: 10px 15px;
+	}.cont_portafolio_r h2 {
+		text-decoration-line: underline;
 	}
 	.cont-img-r {
 		margin: 0 auto;
 		margin-top: 20px;
 		width: 350px;
 		height: 600px;
-		
 		opacity: .85;
 	}
 	.cont-img-r img {
@@ -82,8 +116,54 @@
 		top: -30px;
 		left: -50px;		
 	}
-	.historyRes {
+	.hisRes {
+		display: none;
 		height: 100vh;
-		background: #4b1d01;
+		text-align: center;
+		padding: 10px;
+		overflow: hidden;
+		color: #381601;
+	}
+	.hisRes h2 {
+		text-decoration-line: underline;
+	}
+	.imgRes img {
+		margin: 10px auto;
+		margin-left: -80px;
+		width: 400px;
+		height: 400px;
+	}
+	.menuRes {
+		display: none;
+		height: 100vh;
+		text-align: center;
+		padding: 10px;
+		color: #381601;
+	}
+	.menuRes h1 {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	.left,.right {
+		margin: 0;
+	}
+	.galery img,.galery img {
+		width: 30px;
+		height: 30px;
+	}
+	.package {
+		margin: 10px 150px;
+		border-bottom: 3px dotted #381601;
+	}
+	.contactRes {
+		display: none;
+		height: 100vh;
+		text-align: center;
+		padding: 10px;
+	}
+	
+}
+@media screen and (max-width: 600px ){
+	.package {
+		margin: 10px 0;
 	}
 }
