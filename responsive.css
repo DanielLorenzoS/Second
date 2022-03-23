@@ -72,12 +72,12 @@
 		from {
 			margin-left: -200px;
 		}to {
-			margin-left: 150px;
+			margin-left: 100px;
 		}
 	}
 	@keyframes left {
 		from {
-			margin-left: 150px;
+			margin-left: 100px;
 		}to {
 			margin-left: -200px;
 		}
@@ -160,10 +160,28 @@
 		text-align: center;
 		padding: 10px;
 	}
+	.dataF {
+		margin: 10px;
+	}
+	.info {
+		display: none;
+	}
 	
 }
 @media screen and (max-width: 600px ){
 	.package {
 		margin: 10px 0;
+	}
+}
+@media screen and (max-width: 440px ){
+	.dataF {
+		display: none;
+	}
+	.info {
+		display: block;
+		color: #381601;
+	}
+	.maps {
+		margin-top: 200px;
 	}
 }
