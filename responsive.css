@@ -163,7 +163,7 @@
 	.dataF {
 		margin: 10px;
 	}
-	.info {
+	.info,.maps {
 		display: none;
 	}
 	
