@@ -176,3 +176,22 @@ four.addEventListener('click', () => {
     float.setAttribute('class', 'notShow');
     btnMenu.setAttribute('class','turnAgain');
 });
+
+let img = document.getElementById('coff1');
+let img2 = document.getElementById('pancake1');
+let titleCoffeRes = document.getElementById('titleCof');
+let titleCakeRes = document.getElementById('titleCak');
+
+img.addEventListener('mousedown', () => {
+    counter++;
+    counter == coffes.length ? counter = 0 : counter;
+    titleCoffeRes.innerHTML = `${title[counter]}`
+    changeImage(`${coffes[counter]}`, 'coff1'); 
+});
+
+img2.addEventListener('mousedown', () => {
+    counter++;
+    counter == cakes.length ? counter = 0 : counter;
+    titleCakeRes.innerHTML = `${title2[counter]}`
+    changeImage(`${cakes[counter]}`, 'pancake1');
+})
