@@ -281,8 +281,9 @@ h2 {
 	display: none;
 }
 .dataF {
+	color: #2e1200;
 	text-align: center;
-	border: 8px double #222;
+	border: 8px double rgb(41, 22, 0);
 	padding: 20px;
 	margin: 40px 100px;
 	font-size: 20px;
